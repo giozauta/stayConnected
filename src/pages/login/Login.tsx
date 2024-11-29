@@ -14,7 +14,7 @@ const Login: React.FC = () => {
         <CardHeader>
           <CardTitle>
             <div className="w-full flex justify-center ">
-              <img src="../../../public/images/pc.jpg" alt="stayConnected" />
+              <img src="images/pc.jpg" alt="stayConnected" />
             </div>
           </CardTitle>
           <CardDescription>Login </CardDescription>
