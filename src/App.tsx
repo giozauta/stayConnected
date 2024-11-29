@@ -6,6 +6,8 @@ import Home from "./pages/home";
 import Registration from "./pages/registration"; // Keep Registration import
 import NotFoundPage from "./pages/404";
 import Login from "./pages/login/Login"; // Keep Login import
+import Profile from "./pages/profile"; //keep Profile import
+
 
 // lazy components can be added later
 
@@ -15,8 +17,12 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+
           <Route path="signUp" element={<Registration />} />{" "}
           <Route path="login" element={<Login />} /> {/* Route for login */}
+
+          <Route path="signUp" element={<Registration />} />
+          <Route path="profile" element={<Profile />} />{/* Route for profile */}
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
