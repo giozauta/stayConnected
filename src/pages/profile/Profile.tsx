@@ -42,56 +42,6 @@ const Profile: React.FC = () => {
           </div>
         </div>
 
-        {/* Leaderboard Section */}
-        <div className="bg-white rounded-xl shadow-md p-8 space-y-6 hover:shadow-xl transition-shadow duration-300">
-          <p className="text-2xl font-semibold text-gray-800">Leaderboard</p>
-          <div className="space-y-4">
-            <div className="flex items-center justify-between text-gray-600">
-              <p className="text-lg">1. John Doe</p>
-              <Avatar className="w-10 h-10 rounded-full">
-                <AvatarImage
-                  className="w-full h-full object-cover rounded-full"
-                  src="https://github.com/shadcn.png"
-                  alt="John Doe"
-                />
-                <AvatarFallback>JD</AvatarFallback>
-              </Avatar>
-            </div>
-            <div className="flex items-center justify-between text-gray-600">
-              <p className="text-lg">2. Jane Smith</p>
-              <Avatar className="w-10 h-10 rounded-full">
-                <AvatarImage
-                  className="w-full h-full object-cover rounded-full"
-                  src="https://github.com/shadcn.png"
-                  alt="Jane Smith"
-                />
-                <AvatarFallback>JS</AvatarFallback>
-              </Avatar>
-            </div>
-            <div className="flex items-center justify-between text-gray-600">
-              <p className="text-lg">3. Bob Johnson</p>
-              <Avatar className="w-10 h-10 rounded-full">
-                <AvatarImage
-                  className="w-full h-full object-cover rounded-full"
-                  src="https://github.com/shadcn.png"
-                  alt="Bob Johnson"
-                />
-                <AvatarFallback>BJ</AvatarFallback>
-              </Avatar>
-            </div>
-            <div className="flex items-center justify-between text-gray-600">
-              <p className="text-lg">4. Giorgi</p>
-              <Avatar className="w-10 h-10 rounded-full">
-                <AvatarImage
-                  className="w-full h-full object-cover rounded-full"
-                  src="https://github.com/shadcn.png"
-                  alt="Giorgi"
-                />
-                <AvatarFallback>G</AvatarFallback>
-              </Avatar>
-            </div>
-          </div>
-        </div>
 
         {/* Logout Button */}
         <div className="flex justify-center">
