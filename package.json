@@ -12,6 +12,8 @@
     "prepare": "husky && husky install"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.61.5",
+    "@tanstack/react-query-devtools": "^5.61.5",
     "axios": "^1.7.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
