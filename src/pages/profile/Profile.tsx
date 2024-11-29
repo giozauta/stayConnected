@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const Profile: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-full gap-12 px-6 py-8 bg-gray-50">
-      <div className="w-full max-w-3xl bg-white rounded-xl shadow-2xl p-10 space-y-8">
+
+      <div className="w-full border m-auto max-w-3xl bg-white rounded-xl shadow-2xl p-10 space-y-8">
         {/* Profile Header */}
         <h2 className="text-4xl font-extrabold text-center text-gray-800 tracking-tight">
           Profile
@@ -49,7 +49,7 @@ const Profile: React.FC = () => {
           </Button>
         </div>
       </div>
-    </div>
+
   );
 };
 

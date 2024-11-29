@@ -28,8 +28,13 @@ const LoginForm: React.FC = () => {
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-6">
       {/* მეილი */}
       <div className="flex flex-col space-y-1.5">
-        <Label htmlFor="email" className="
-        text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</Label>
+        <Label
+          htmlFor="email"
+          className="
+        text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        >
+          Email
+        </Label>
         <Controller
           name="email"
           control={control}
@@ -43,7 +48,12 @@ const LoginForm: React.FC = () => {
       </div>
       {/* პაროლი */}
       <div className="flex flex-col space-y-1.5">
-        <Label htmlFor="password" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Password</Label>
+        <Label
+          htmlFor="password"
+          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        >
+          Password
+        </Label>
         <Controller
           name="password"
           control={control}
