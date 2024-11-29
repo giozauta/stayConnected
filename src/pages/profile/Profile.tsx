@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Profile: React.FC = () => {
   return (
-    <div className="gap-10  flex mx-auto flex-col  justify-evenly h-[700px] w-[50%] ">
+    <div className="gap-10  flex mx-auto flex-col  justify-evenly h-[700px] w-[100%] md:w-[50%] ">
       <div className=" flex p-5 shadow-lg border rounded-md flex-col mx-auto gap-5  w-full ">
         <div className=" font-bold text-2xl">Profile</div>
         <div className=" shadow-sm flex flex-col md:flex-row items-center md:items-start  bg-card rounded-lg  p-8">
