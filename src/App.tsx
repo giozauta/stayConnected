@@ -1,9 +1,10 @@
 import "./App.css";
 import Layout from "./layouts";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
 import Home from "./pages/home";
 import Registration from "./pages/registration";
+import NotFoundPage from "./pages/404";
 
 // lazy კომპონენტები მოგვიანებით გავუწეროთ
 
@@ -15,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="signUp" element={<Registration />} />
         </Route>
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   );
