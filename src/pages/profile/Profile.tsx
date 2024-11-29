@@ -38,7 +38,7 @@ const Profile: React.FC = () => {
           </div>
         </div>
         <div className=" flex flex-col md:flex-row items-center md:items-start  bg-card rounded-lg  p-8">
-          <Button variant={"destructive"}>Logout</Button>
+          <Button className="bg-sky-400 m-auto w-full hover:bg-sky-600">Logout</Button>
         </div>
       </div>
     </div>
