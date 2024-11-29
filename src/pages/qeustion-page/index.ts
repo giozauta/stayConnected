@@ -1,1 +1,1 @@
-export {default} from "./QuestionPage";
+export { default } from "./QuestionPage";

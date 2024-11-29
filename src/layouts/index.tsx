@@ -3,16 +3,16 @@ import Footer from "@/components/footer";
 import MainSection from "@/components/main-section";
 import { Outlet } from "react-router-dom";
 
-const Layout:React.FC= () => {
+const Layout: React.FC = () => {
   return (
     <>
-        <Header/>
-         <MainSection>
-            <Outlet/>
-         </MainSection>
-        <Footer/>
+      <Header />
+      <MainSection>
+        <Outlet />
+      </MainSection>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

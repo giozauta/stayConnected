@@ -1,10 +1,5 @@
+const Header: React.FC = () => {
+  return <div>header</div>;
+};
 
-const Header:React.FC = () => {
-  return (
-    <div>
-        header
-    </div>
-  )
-}
-
-export default Header
+export default Header;
