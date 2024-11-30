@@ -16,13 +16,10 @@ const Person: React.FC<PropsWithChildren> = () => {
       </div>
 
       <div className="flex gap-5">
-      <Button className=" p-0" variant="link">
+        <Button className=" p-0" variant="link">
           Date Time
         </Button>
-        <Button variant="outline">
-        Approve
-        </Button>
-
+        <Button variant="outline">Approve</Button>
       </div>
     </div>
   );
