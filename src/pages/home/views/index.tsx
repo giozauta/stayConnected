@@ -7,11 +7,10 @@ import Questions from "../components/questions/questions";
 
 const HomeView = () => {
   return (
-      <div className="flex gap-10">
-        <Questions width={"w-3/4"} />
-        <Leaderboard />
-      </div>
-    
+    <div className="flex gap-10">
+      <Questions width={"w-3/4"} />
+      <Leaderboard />
+    </div>
   );
 };
 

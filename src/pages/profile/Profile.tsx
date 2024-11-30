@@ -23,21 +23,31 @@ const Profile: React.FC = () => {
           </Avatar>
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
-          <p className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Giorgi</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">example@gmail.com</p>
+          <p className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+            Giorgi
+          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            example@gmail.com
+          </p>
         </div>
       </div>
 
       {/* Information Section */}
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 space-y-6 hover:shadow-xl transition-shadow duration-300">
-        <p className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Information</p>
+        <p className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+          Information
+        </p>
         <div className="flex justify-between text-gray-600 dark:text-gray-400">
           <p className="text-lg">Score</p>
-          <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">25</p>
+          <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            25
+          </p>
         </div>
         <div className="flex justify-between text-gray-600 dark:text-gray-400">
           <p className="text-lg">Answered Questions</p>
-          <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">10</p>
+          <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            10
+          </p>
         </div>
       </div>
 
