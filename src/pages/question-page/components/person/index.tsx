@@ -4,7 +4,7 @@ import React, { PropsWithChildren } from "react";
 
 const Person: React.FC<PropsWithChildren> = () => {
   return (
-    <div className=" persons flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between  shadow-inner bg-gray-200 border rounded-lg p-5 ">
+    <div className="dark:bg-gray-800 persons flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between  shadow-inner bg-gray-200 border rounded-lg p-5 ">
       {/* Left Section */}
       <div className="flex gap-5 ">
         <div className="flex items-center space-x-4">
