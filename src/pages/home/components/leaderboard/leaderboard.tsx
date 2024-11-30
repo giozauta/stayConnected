@@ -1,5 +1,5 @@
 const Leaderboard = () => {
-  return <div>leaderboard</div>;
+  return <div className="h-full">leaderboard</div>;
 };
 
 export default Leaderboard;
