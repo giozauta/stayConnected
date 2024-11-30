@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
-import Person from '../person';
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import Person from "../person";
 
 const QuestionContainer = () => {
   const persons = ["giorgi", "gvanca", "elene", "teona", "teona", "rati"]; // Placeholder for persons who answered
@@ -38,18 +38,15 @@ const QuestionContainer = () => {
           Answers
         </h3>
         <div className="h-48 overflow-y-auto flex flex-col gap-4 pr-10 scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-transparent dark:scrollbar-thumb-blue-700 dark:scrollbar-track-transparent">
-  {persons.map((personData, index) => (
-    <Person key={index} />
-  ))}
-</div>
+          {persons.map((personData, index) => (
+            <Person key={index} />
+          ))}
+        </div>
       </div>
 
       {/* Question Footer */}
       <div className="flex items-center gap-4">
-        <Textarea
-          className="flex-1"
-          placeholder="Type your message here."
-        />
+        <Textarea className="flex-1" placeholder="Type your message here." />
         <Button className="h-full bg-blue-600 text-white hover:bg-blue-700">
           Send
         </Button>

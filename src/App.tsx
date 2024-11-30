@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route  element={<Layout />}>
+          <Route element={<Layout />}>
             <Route path="/" element={<HomeView />} />
             <Route path="signUp" element={<Registration />} />{" "}
             <Route path="login" element={<Login />} /> {/* Route for login */}
