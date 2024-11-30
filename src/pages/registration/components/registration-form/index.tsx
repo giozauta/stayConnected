@@ -16,7 +16,7 @@ const RegistrationForm: React.FC = () => {
   } = useForm<RegisterDataType>({
     resolver: zodResolver(registerFormSchema),
     defaultValues: {
-      name:"",
+      name: "",
       lastName: "",
       email: "",
       password: "",
@@ -35,8 +35,7 @@ const RegistrationForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="grid w-full items-center gap-4">
-
-      <div className="flex flex-col space-y-1.5">
+        <div className="flex flex-col space-y-1.5">
           <Label htmlFor="name">Name</Label>
           <Controller
             name="name"
@@ -45,9 +44,7 @@ const RegistrationForm: React.FC = () => {
               <Input id="name" type="text" placeholder="Name" {...field} />
             )}
           />
-          {errors.name && (
-            <p className="text-red-500">{errors.name.message}</p>
-          )}
+          {errors.name && <p className="text-red-500">{errors.name.message}</p>}
         </div>
 
         <div className="flex flex-col space-y-1.5">
@@ -56,14 +53,18 @@ const RegistrationForm: React.FC = () => {
             name="lastName"
             control={control}
             render={({ field }) => (
-              <Input id="lastName" type="text" placeholder="Last Name" {...field} />
+              <Input
+                id="lastName"
+                type="text"
+                placeholder="Last Name"
+                {...field}
+              />
             )}
           />
           {errors.lastName && (
             <p className="text-red-500">{errors.lastName.message}</p>
           )}
         </div>
-
 
         <div className="flex flex-col space-y-1.5">
           <Label htmlFor="email">Email</Label>

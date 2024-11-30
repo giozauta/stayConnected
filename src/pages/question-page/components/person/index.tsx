@@ -4,8 +4,9 @@ import React, { PropsWithChildren } from "react";
 
 const Person: React.FC<PropsWithChildren> = () => {
   return (
-    <div className="persons flex items-center  justify-between">
-      <div className="flex gap-5">
+    <div className=" persons flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between  shadow-inner bg-gray-200 border rounded-lg p-5 ">
+      {/* Left Section */}
+      <div className="flex gap-5 ">
         <div className="flex items-center space-x-4">
           <Skeleton className="h-12 w-12 rounded-full" />
           <div className="space-y-2">
@@ -15,11 +16,12 @@ const Person: React.FC<PropsWithChildren> = () => {
         </div>
       </div>
 
-      <div className="flex gap-5">
-        <Button className=" p-0" variant="link">
+      {/* Right Section */}
+      <div className="flex  items-start gap-2 sm:flex-row sm:items-center sm:gap-5 ">
+        <Button className="p-0" variant="link">
           Date Time
         </Button>
-        <Button variant="outline">Approve</Button>
+        <Button variant="outline" className=" w-full">Approve</Button>
       </div>
     </div>
   );
