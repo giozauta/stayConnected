@@ -14,7 +14,7 @@ interface myCardProps {
 
 const Questions: React.FC<myCardProps> = ({ width }) => {
   return (
-    <div className="max-w-[1400px] w-full mx-auto px-5  mt-8 mb-8 font-sans">
+    <div className="max-w-[1400px] w-full mx-auto px-5 h-full  mt-8 mb-8 font-sans">
       <Card
         className={`rounded-xl border-solid border-b border-zinc-200 bg-card text-card-foreground shadow h-[250px] ${width} mb-5`}
       >

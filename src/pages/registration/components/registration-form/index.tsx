@@ -83,11 +83,16 @@ const RegistrationForm: React.FC = () => {
           )}
         </div>
         <div className="flex justify-between">
-          <Button variant="outline" type="submit">
+          <Button className="w-full" variant="outline" type="submit">
             Register
           </Button>
+        </div>
+        <div className="flex justify-center items-center">
+          <p className="text-muted-foreground">Don't have an account?</p>
           <Button variant="link">
-            <Link to="/login">Sign In</Link>
+            <Link className="text-bold " to="/login">
+              Sign In
+            </Link>
           </Button>
         </div>
       </div>
