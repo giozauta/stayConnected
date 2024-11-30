@@ -3,7 +3,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Person from "../person";
 
 const QuestionContainer = () => {
-  const persons = ["giorgi", "gvanca", "elene", "teona", "teona", "rati"]; // Placeholder for persons who answered
+  const persons = ["giorgi", "gvanca", "elene", "teona", "rati"]; // Placeholder for persons who answered
 
   return (
     <div className="bg-gray-50 dark:bg-gray-800 p-6 md:p-8 lg:p-10 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md flex flex-col gap-14">
