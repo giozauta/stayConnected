@@ -15,14 +15,12 @@ const QuestionContainer = () => {
           </h2>
           <div className="flex gap-4">
             <Button className="text-gray-600 dark:text-gray-300" variant="link">
-              Like
-            </Button>
-            <Button className="text-gray-600 dark:text-gray-300" variant="link">
               Author
             </Button>
             <Button className="text-gray-600 dark:text-gray-300" variant="link">
               Date Time
             </Button>
+ 
           </div>
         </div>
         <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
