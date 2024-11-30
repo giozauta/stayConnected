@@ -6,7 +6,7 @@ const QuestionContainer = () => {
   const persons = ["giorgi", "gvanca", "elene", "teona", "teona", "rati"]; // Placeholder for persons who answered
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-600 p-6 md:p-8 lg:p-10 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md flex flex-col gap-14">
+    <div className="bg-gray-50 dark:bg-black p-6 md:p-8 lg:p-10 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md flex flex-col gap-14">
       {/* Question Header */}
       <div className="flex flex-col gap-4">
         <div className="flex justify-between items-center">
@@ -44,7 +44,10 @@ const QuestionContainer = () => {
       {/* Question Footer */}
       <div className="flex items-center gap-4">
         <Textarea className="flex-1" placeholder="Type your message here." />
-        <Button className="h-full bg-blue-700 text-white dark:bg-black dark:text-white" variant="outline">
+        <Button
+          className="h-full bg-blue-700 text-white dark:bg-black dark:text-white"
+          variant="outline"
+        >
           Send
         </Button>
       </div>
