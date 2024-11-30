@@ -7,6 +7,7 @@ import { FormValues } from "../types/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginFormSchema } from "./schema";
 import { Label } from "@radix-ui/react-label";
+// import { useMutation } from "@tanstack/react-query";
 
 const LoginForm: React.FC = () => {
   const {
@@ -18,10 +19,19 @@ const LoginForm: React.FC = () => {
     defaultValues: LoginDefaultValues,
   });
 
+  // const { mutate: handleLogin } = useMutation({
+  //   mutationKey: ["login"],
+  //   mutationFn: login,
+  //   onSuccess: (data) => {
+  //     console.log("User signed in:", data);
+  //   },
+  // });
+
   const onSubmit = (values: FormValues) => {
     const { email, password } = values;
     alert("login successfully");
     console.log(email, password);
+    // handleLogin({email, password})
   };
 
   return (
@@ -71,12 +81,17 @@ const LoginForm: React.FC = () => {
         )}
       </div>
       {/*დალოგინება/რეგისტრაციაზე გადასვლა */}
-      <div className="mt-4 flex justify-between">
-        <Button type="submit" variant="outline">
-          Log In
+      <div className="flex justify-between">
+        <Button className="w-full" variant="outline" type="submit">
+          Log in
         </Button>
+      </div>
+      <div className="flex justify-center items-center">
+        <p className="text-muted-foreground">Already have an account?</p>
         <Button variant="link">
-          <Link to="/signup">Sign Up</Link>
+          <Link className="text-bold " to="/signup">
+            Sign up
+          </Link>
         </Button>
       </div>
     </form>

@@ -8,6 +8,7 @@ import NotFoundPage from "./pages/404";
 import Login from "./pages/login/Login"; // Keep Login import
 import Profile from "./pages/profile"; //keep Profile import
 import { ThemeProvider } from "@/components/theme-provider";
+import QuestionPage from "./pages/question-page";
 
 // lazy components can be added later
 
@@ -16,12 +17,12 @@ function App() {
     <ThemeProvider>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<HomeView />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomeView />} />
             <Route path="signUp" element={<Registration />} />{" "}
             <Route path="login" element={<Login />} /> {/* Route for login */}
-            <Route path="signUp" element={<Registration />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="questionPage" element={<QuestionPage />} />
             {/* Route for profile */}
           </Route>
           <Route path="*" element={<NotFoundPage />} />

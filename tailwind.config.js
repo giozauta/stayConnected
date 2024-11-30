@@ -53,5 +53,11 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwind-scrollbar"), // Add this line
+  ],
+  variants: {
+    scrollbar: ["rounded"], // Enable rounded scrollbar variant (optional)
+  },
 };

@@ -20,7 +20,7 @@ import {
 
 const Header = () => {
   return (
-    <div className="border-solid border-b border-b-zinc-400">
+    <div className=" shadow-[0px_-2px_4px_rgba(0,0,0,0.1)] ">
       <div className="max-w-[1400px]  mx-auto  px-5 h-20 flex items-center justify-between gap-4">
         <div className="text-2xl font-bold">
           <NavLink to="/">
@@ -31,9 +31,9 @@ const Header = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="lucide lucide-code"
             >
               <polyline points="16 18 22 12 16 6" />
@@ -99,9 +99,9 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="lucide lucide-align-justify"
               >
                 <path d="M3 12h18" />
