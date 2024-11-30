@@ -21,7 +21,9 @@ const Person: React.FC<PropsWithChildren> = () => {
         <Button className="p-0" variant="link">
           Date Time
         </Button>
-        <Button variant="outline" className=" w-full">Approve</Button>
+        <Button variant="outline" className=" w-full">
+          Approve
+        </Button>
       </div>
     </div>
   );
