@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
-import { Command, CommandInput } from "@/components/ui/command";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import { Command, CommandInput } from "@/components/ui/command";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -42,7 +42,7 @@ const Header = () => {
           </NavLink>
         </div>
         <div className="flex justify-between gap-5 md:min-w-[550px] font-sans">
-          <Command className="rounded-lg border shadow-md md:min-w-[300px] ">
+          {/* <Command className="rounded-lg border shadow-md md:min-w-[300px] ">
             <CommandInput placeholder="Type a command or choose a tag..." />
           </Command>
           <Select>
@@ -54,7 +54,7 @@ const Header = () => {
               <SelectItem value="dark">React</SelectItem>
               <SelectItem value="system">C++</SelectItem>
             </SelectContent>
-          </Select>
+          </Select> */}
         </div>
         <div className="flex justify-between gap-3">
           {/* {user ? (
