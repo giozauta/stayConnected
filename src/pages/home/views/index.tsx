@@ -1,5 +1,6 @@
 //import { lazy } from "react";
 
+import Search from "../components/search/search";
 import Leaderboard from "../components/leaderboard/leaderboard";
 import Questions from "../components/questions/questions";
 
@@ -7,10 +8,16 @@ import Questions from "../components/questions/questions";
 
 const HomeView = () => {
   return (
-    <div className="flex gap-10 ">
-      <Questions width={"w-3/4"} />
-      <Leaderboard />
-    </div>
+
+    <>
+      <div className="flex gap-10">
+        <div className="w-3/5">
+          <Search />
+          <Questions width={"w-full"} />
+        </div>
+        <Leaderboard />
+      </div>
+    </>
   );
 };
 
