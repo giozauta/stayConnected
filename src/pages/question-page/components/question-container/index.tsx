@@ -38,7 +38,7 @@ const QuestionContainer = () => {
           Answers
         </h3>
         <div className="h-48 overflow-y-auto flex flex-col gap-4 pr-10 scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-transparent dark:scrollbar-thumb-blue-700 dark:scrollbar-track-transparent">
-          {persons.map((personData, index) => (
+          {persons.map((index) => (
             <Person key={index} />
           ))}
         </div>
