@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card }from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Container from "@/components/ui/container";
 import { Input } from "../../../components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -38,5 +38,3 @@ const CreateQuestion: React.FC = () => {
 };
 
 export default CreateQuestion;
-
-;
