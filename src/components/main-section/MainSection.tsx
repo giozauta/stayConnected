@@ -3,7 +3,8 @@ import { PropsWithChildren } from "react";
 const MainSection: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <div
-      className="h-screen
+      className="
+        p-10
         flex items-center justify-center"
     >
       {children}
