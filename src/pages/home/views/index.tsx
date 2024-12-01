@@ -8,15 +8,13 @@ import Questions from "../components/questions/questions";
 
 const HomeView = () => {
   return (
-    <>
-      <div className="flex gap-10">
-        <div className="w-3/5">
-          <Search />
-          <Questions width={"w-full"} />
-        </div>
-        <Leaderboard />
+    <div className="flex gap-10">
+      <div className="w-3/5">
+        <Search />
+        <Questions width={"w-full"} />
       </div>
-    </>
+      <Leaderboard />
+    </div>
   );
 };
 
