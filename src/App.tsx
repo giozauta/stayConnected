@@ -9,6 +9,7 @@ import Login from "./pages/login/Login"; // Keep Login import
 import Profile from "./pages/profile"; //keep Profile import
 import { ThemeProvider } from "@/components/theme-provider";
 import QuestionPage from "./pages/question-page";
+// import CreateQuestion from "./pages/CreateQuestionPage/CreateQuestionView/createQuestionView";
 
 
 // lazy components can be added later
@@ -23,7 +24,7 @@ function App() {
             <Route path="signUp" element={<Registration />} />{" "}
             <Route path="login" element={<Login />} /> {/* Route for login */}
             <Route path="profile" element={<Profile />} />
-            <Route path="questionPage" element={<QuestionPage />} />
+            {/*<Route path="questionPage" element={<QuestionPage />} />*/}
             <Route path="CreateQuestion" element={<CreateQuestion />} />
             {/* Route for profile */}
           </Route>
