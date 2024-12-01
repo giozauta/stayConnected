@@ -50,11 +50,11 @@ const FancyMultiSelect: React.FC = () => {
         }
       }
     },
-    [],
+    []
   );
 
   const selectables = FRAMEWORKS.filter(
-    (framework) => !selected.some((s) => s.value === framework.value),
+    (framework) => !selected.some((s) => s.value === framework.value)
   );
 
   return (
