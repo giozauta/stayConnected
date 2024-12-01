@@ -20,7 +20,7 @@ import {
 
 const Header = () => {
   return (
-    <div className=" shadow-[0px_-2px_4px_rgba(0,0,0,0.1)] ">
+    <div className=" shadow-[0px_-2px_4px_rgba(0,0,0,0.1)] border-solid border-b border-b-gray-300 dark:border-b-solid dark:border-b-neutral-800">
       <div className="max-w-[1400px]  mx-auto  px-5 h-20 flex items-center justify-between gap-4">
         <div className="text-2xl font-bold">
           <NavLink to="/">
@@ -112,7 +112,7 @@ const Header = () => {
             <DropdownMenuContent>
               <DropdownMenuSeparator />
               <NavLink to="login">
-                <DropdownMenuItem>Sign In</DropdownMenuItem>{" "}
+                <DropdownMenuItem>Sign In</DropdownMenuItem>
               </NavLink>
               {/* <DropdownMenuItem>Add Question</DropdownMenuItem> only appears if user is logged in */}
             </DropdownMenuContent>

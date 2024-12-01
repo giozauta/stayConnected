@@ -10,8 +10,8 @@ import {
 const Search = () => {
   return (
     <>
-      <div className="max-w-[1200px] mx-auto px-5  mt-8 mb-8 font-sans flex gap-5">
-        <Command className="rounded-lg border shadow-md md:min-w-[300px] w-3/4">
+      <div className="max-w-[1200px] mx-auto px-5  mt-8 mb-8 font-sans flex gap-5 ">
+        <Command className="rounded-lg border shadow-md md:min-w-[300px] w-3/4 dark:border-solid dark:border-neutral-800">
           <CommandInput placeholder="Type a command or choose a tag..." />
         </Command>
         <Select>
