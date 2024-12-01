@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import QuestionPage from "./pages/question-page";
 import CreateQuestion from "./pages/CreateQuestionPage/CreateQuestionView/createQuestionView";
 
+
 // lazy components can be added later
 
 function App() {
